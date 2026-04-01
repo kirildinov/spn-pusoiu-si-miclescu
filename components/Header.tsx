@@ -21,13 +21,13 @@ export default function Header() {
         <div className="flex items-center gap-6">
           <HeaderNav navLinks={navLinks} />
 
-          {/* Desktop CTA */}
-          <Link
-            href="/contact"
+          {/* Phone CTA */}
+          <a
+            href={`tel:${BUSINESS.phone}`}
             className="btn-primary hidden lg:inline-flex"
           >
-            Programați
-          </Link>
+            {BUSINESS.phoneFormatted}
+          </a>
         </div>
       </div>
     </header>

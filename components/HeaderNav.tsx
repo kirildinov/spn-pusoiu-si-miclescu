@@ -97,23 +97,14 @@ export default function HeaderNav({ navLinks }: HeaderNavProps) {
                   </Link>
                 ))}
 
-                {/* Phone number */}
+                {/* Phone CTA */}
                 <a
                   href={`tel:${BUSINESS.phone}`}
-                  className="flex items-center gap-2 py-3 px-2 text-secondary-foreground/80 hover:text-primary transition-colors text-sm mt-2"
+                  className="btn-primary mt-4 justify-center"
                 >
                   <Phone className="w-4 h-4" strokeWidth={1.5} />
                   {BUSINESS.phoneFormatted}
                 </a>
-
-                {/* CTA button */}
-                <Link
-                  href="/contact"
-                  onClick={() => setIsOpen(false)}
-                  className="btn-primary mt-4 justify-center"
-                >
-                  Programați
-                </Link>
               </nav>
             </div>
           </div>
