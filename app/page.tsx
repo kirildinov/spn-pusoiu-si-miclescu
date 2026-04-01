@@ -100,10 +100,10 @@ export default function Home() {
                 />
 
                 {/* Quote overlay at bottom */}
-                <div className="absolute bottom-0 inset-x-0 bg-secondary/85 backdrop-blur-sm rounded-lg m-4 p-5">
-                  <p className="font-heading text-base italic text-secondary-foreground/90 leading-relaxed">
-                    &ldquo;Precizie în fiecare sigiliu, încredere în fiecare
-                    semnătură.&rdquo;
+                <div className="absolute bottom-0 inset-x-0 bg-secondary/85 backdrop-blur-sm rounded-lg m-4 p-6">
+                  <p className="font-heading text-xl italic text-secondary-foreground/90 leading-snug">
+                    &ldquo;Fiat satisfactio in omni sigillo, fides in omni
+                    subscriptione.&rdquo;
                   </p>
                 </div>
               </div>
