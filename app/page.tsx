@@ -154,8 +154,14 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left — Visual */}
             <div className="relative">
-              <div className="bg-secondary rounded-2xl aspect-[3/4] max-w-md mx-auto flex items-center justify-center p-8">
-                <BookplateLockup variant="dark" width={300} />
+              <div className="rounded-2xl overflow-hidden aspect-[3/4] max-w-md mx-auto">
+                <Image
+                  src="/team-miclescu-bogdan.webp"
+                  alt="Notar public Miclescu Bogdan Constantin"
+                  width={400}
+                  height={533}
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               {/* Floating stat card */}
               <div className="absolute -bottom-6 -right-2 lg:right-4 bg-card border border-border rounded-xl p-5 shadow-lg">
