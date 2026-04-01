@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { MapPin, Clock, Award, Users } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 import GoldRule from "@/components/GoldRule";
@@ -93,9 +94,12 @@ export default function DespreNoiPage() {
 
             {/* Miclescu Bogdan Constantin */}
             <div className="bg-card border border-border rounded-xl overflow-hidden shadow-sm">
-              <PlaceholderAvatar
-                initials="MB"
-                className="w-full aspect-[4/5]"
+              <Image
+                src="/team-miclescu-bogdan.webp"
+                alt="Notar public Miclescu Bogdan Constantin"
+                width={400}
+                height={500}
+                className="w-full aspect-[4/5] object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="font-heading text-2xl font-bold text-foreground">
