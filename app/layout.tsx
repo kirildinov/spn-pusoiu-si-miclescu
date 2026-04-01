@@ -4,6 +4,7 @@ import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import BackToTop from "@/components/BackToTop";
 import CookieConsent from "@/components/CookieConsent";
 import { LocalBusinessSchema } from "@/components/StructuredData";
 import { BUSINESS } from "@/lib/business";
@@ -92,6 +93,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppButton />
+        <BackToTop />
         <CookieConsent />
         <LocalBusinessSchema />
 
