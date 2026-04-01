@@ -24,7 +24,7 @@ export default function Header() {
           {/* Phone CTA — desktop only */}
           <a
             href={`tel:${BUSINESS.phone}`}
-            className="btn-primary hidden lg:inline-flex"
+            className="btn-primary !hidden lg:!inline-flex"
           >
             {BUSINESS.phoneFormatted}
           </a>
