@@ -24,7 +24,7 @@ export const BUSINESS = {
   ] as const,
   whatsapp: {
     number: "40731467071",
-    message: "Bună ziua, doresc să programez un act notarial.",
+    message: "Bună ziua, doresc să fac o programare.",
   },
   geo: {
     lat: 44.4318608,
@@ -32,8 +32,7 @@ export const BUSINESS = {
     placeId: "ChIJwXVNbtf-sUARO_1UAj7NbRk",
     mapEmbedUrl:
       "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1500!2d26.1355653!3d44.4318608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fed76e4d75c1%3A0x196dcd3e0254fd3b!2sSocietatea+Profesional%C4%83+Notarial%C4%83+Pu%C8%99oiu+Iuliana+%C8%99i+Miclescu+Bogdan+Constantin!5e0!3m2!1sro!2sro",
-    directionsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=44.4318608,26.1355653",
+    directionsUrl: "https://maps.app.goo.gl/dicwwLEMxEpeQgFv8",
   },
   social: {
     facebook:

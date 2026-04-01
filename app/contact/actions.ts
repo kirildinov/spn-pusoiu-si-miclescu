@@ -45,7 +45,7 @@ export async function submitContact(
 
   try {
     await resend.emails.send({
-      from: "noreply@notariat-public-bucuresti.ro",
+      from: "noreply@pixelmill.dev",
       to: BUSINESS.email,
       replyTo: email || undefined,
       subject: `Mesaj nou de pe site — ${name}`,
