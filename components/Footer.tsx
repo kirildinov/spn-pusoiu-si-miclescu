@@ -153,7 +153,7 @@ export default function Footer() {
             &copy; {BUSINESS.foundedYear}&ndash;{currentYear} {BUSINESS.legalName}. CUI: {BUSINESS.cui}
           </p>
           <p className="text-xs text-secondary-foreground/50">
-            Website developed by Pixelmill.
+            Website developed by <a href="https://pixelmill.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Pixelmill</a>.
           </p>
         </div>
       </div>

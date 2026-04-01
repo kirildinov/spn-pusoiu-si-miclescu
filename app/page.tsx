@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Shield,
   Phone,
@@ -86,25 +87,21 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Column */}
+            {/* Right Column — Hero Image */}
             <div className="relative hidden lg:block">
-              <div className="relative">
-                {/* Bookplate Lockup as hero visual */}
-                <div className="flex items-center justify-center p-12">
-                  <BookplateLockup variant="dark" width={380} />
-                </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/hero-notariat.webp"
+                  alt="Statuia Justiției — simbol al încrederii și autenticității notariale"
+                  width={800}
+                  height={1000}
+                  priority
+                  className="w-full h-auto object-cover"
+                />
 
-                {/* Quote Card */}
-                <div className="absolute -bottom-4 -left-4 bg-secondary-lighter border border-primary/20 rounded-lg p-5 max-w-[280px] shadow-lg">
-                  <div className="flex gap-1 mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-3.5 h-3.5 fill-primary text-primary"
-                      />
-                    ))}
-                  </div>
-                  <p className="font-heading text-sm italic text-secondary-foreground/90 leading-relaxed">
+                {/* Quote overlay at bottom */}
+                <div className="absolute bottom-0 inset-x-0 bg-secondary/85 backdrop-blur-sm rounded-lg m-4 p-5">
+                  <p className="font-heading text-base italic text-secondary-foreground/90 leading-relaxed">
                     &ldquo;Precizie în fiecare sigiliu, încredere în fiecare
                     semnătură.&rdquo;
                   </p>

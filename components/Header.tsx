@@ -16,10 +16,7 @@ export default function Header() {
   return (
     <header className="bg-secondary sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-[72px]">
-        {/* Desktop logo */}
-        <HeaderLogo variant="desktop" className="hidden lg:block" />
-        {/* Mobile logo */}
-        <HeaderLogo variant="mobile" className="lg:hidden" />
+        <HeaderLogo variant="desktop" />
 
         <div className="flex items-center gap-6">
           <HeaderNav navLinks={navLinks} />
