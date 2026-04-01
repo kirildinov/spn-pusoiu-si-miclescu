@@ -170,7 +170,7 @@ export default function Home() {
                   <Star className="w-5 h-5 inline-block ml-1 -mt-1 fill-primary text-primary" />
                 </p>
                 <p className="font-body text-xs text-muted-foreground mt-1">
-                  din {BUSINESS.rating.count} recenzii Google
+                  din 135+ recenzii Google
                 </p>
               </div>
             </div>
