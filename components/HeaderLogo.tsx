@@ -25,8 +25,7 @@ function DesktopLogo() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 260 44"
-      width={260}
-      height={44}
+      className="w-[260px] h-[44px] lg:w-[320px] lg:h-[54px]"
       role="img"
       aria-hidden="true"
     >

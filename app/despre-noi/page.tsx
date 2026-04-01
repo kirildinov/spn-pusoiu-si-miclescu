@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { MapPin, Clock, Award, Users } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 import GoldRule from "@/components/GoldRule";
-import BookplateLockup from "@/components/BookplateLockup";
 import PlaceholderAvatar from "@/components/PlaceholderAvatar";
 
 export const metadata: Metadata = {
@@ -159,12 +158,6 @@ export default function DespreNoiPage() {
         </div>
       </section>
 
-      {/* Bookplate */}
-      <section className="bg-secondary py-16 md:py-20">
-        <div className="max-w-md mx-auto px-6 flex justify-center">
-          <BookplateLockup variant="dark" width={340} />
-        </div>
-      </section>
-    </>
+</>
   );
 }
