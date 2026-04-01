@@ -101,7 +101,7 @@ export default function Home() {
 
                 {/* Quote overlay at bottom */}
                 <div className="absolute bottom-0 inset-x-0 bg-secondary/85 backdrop-blur-sm rounded-lg m-4 p-6">
-                  <p className="font-heading text-2xl italic text-secondary-foreground/90 leading-snug text-center">
+                  <p className="font-heading text-lg italic text-secondary-foreground/90 text-center whitespace-nowrap">
                     &ldquo;Fiat satisfactio in omni sigillo, fides in omni
                     subscriptione.&rdquo;
                   </p>
