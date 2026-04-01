@@ -1,7 +1,7 @@
 import { BUSINESS } from "@/lib/business";
 
 const stats = [
-  { value: "12+", label: "Ani de Experiență" },
+  { value: "14+", label: "Ani de Experiență" },
   { value: "4.6★", label: "Rating Google" },
   { value: "136+", label: "Recenzii Clienți" },
   { value: "10+", label: "Servicii Notariale" },

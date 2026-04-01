@@ -44,7 +44,7 @@ export default function Home() {
 
               <p className="font-body text-lg text-secondary-foreground/80 leading-relaxed max-w-xl mb-8">
                 Servicii notariale complete pe Calea Călărașilor 311, la 2
-                minute de Piața Muncii. Peste 12 ani de experiență, 136 de
+                minute de Piața Muncii. Peste 14 ani de experiență, 136 de
                 recenzii pozitive.
               </p>
 
@@ -61,7 +61,7 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-6">
                 <div>
                   <p className="font-heading text-3xl md:text-4xl font-bold text-primary">
-                    12+
+                    14+
                   </p>
                   <p className="font-body text-xs uppercase tracking-[0.15em] text-secondary-foreground/60 mt-1">
                     Ani Experiență

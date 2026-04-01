@@ -124,7 +124,7 @@ export default function DespreNoiPage() {
                 Din 2012
               </h3>
               <p className="font-body text-sm text-muted-foreground">
-                Peste 12 ani de activitate notarială continuă.
+                Peste 14 ani de activitate notarială continuă.
               </p>
             </div>
             <div className="text-center p-6">
