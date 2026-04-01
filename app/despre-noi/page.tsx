@@ -61,7 +61,7 @@ export default function DespreNoiPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <GoldRule />
-            <p className="font-body text-xs font-medium uppercase tracking-[0.15em] text-primary mb-3">
+            <p className="font-body text-xs font-medium uppercase tracking-[0.15em] text-gold-600 mb-3">
               Echipa Noastră
             </p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">

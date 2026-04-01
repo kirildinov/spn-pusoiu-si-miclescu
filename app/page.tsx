@@ -96,6 +96,7 @@ export default function Home() {
                   width={800}
                   height={1000}
                   priority
+                  sizes="(min-width: 1024px) 50vw, 100vw"
                   className="w-full h-auto object-cover"
                 />
 
@@ -117,7 +118,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <GoldRule />
-            <p className="font-body text-xs font-medium uppercase tracking-[0.15em] text-primary mb-3">
+            <p className="font-body text-xs font-medium uppercase tracking-[0.15em] text-gold-600 mb-3">
               Ce Vă Oferim
             </p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
@@ -171,7 +172,7 @@ export default function Home() {
             {/* Right — Text */}
             <div>
               <GoldRule className="!justify-start" />
-              <p className="font-body text-xs font-medium uppercase tracking-[0.15em] text-primary mb-3">
+              <p className="font-body text-xs font-medium uppercase tracking-[0.15em] text-gold-600 mb-3">
                 Despre Noi
               </p>
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
@@ -243,7 +244,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <GoldRule />
-            <p className="font-body text-xs font-medium uppercase tracking-[0.15em] text-primary mb-3">
+            <p className="font-body text-xs font-medium uppercase tracking-[0.15em] text-gold-600 mb-3">
               Recenzii
             </p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">

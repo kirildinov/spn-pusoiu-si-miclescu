@@ -16,7 +16,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         <p className="text-muted-foreground text-sm leading-relaxed">
           {service.shortDescription}
         </p>
-        <span className="text-primary text-sm font-medium mt-4 inline-block">
+        <span className="text-gold-600 text-sm font-medium mt-4 inline-block">
           Detalii &rarr;
         </span>
       </div>

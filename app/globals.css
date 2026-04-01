@@ -5,8 +5,8 @@
   --foreground: 216 40% 15%;
   --card: 0 0% 100%;
   --card-foreground: 216 40% 15%;
-  --primary: 43 54% 54%;
-  --primary-hover: 43 54% 46%;
+  --primary: 43 60% 45%;
+  --primary-hover: 43 66% 38%;
   --primary-foreground: 0 0% 100%;
   --secondary: 216 54% 13%;
   --secondary-lighter: 216 40% 19%;
@@ -119,7 +119,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: hsl(var(--primary));
+  background-color: hsl(var(--gold-600));
   color: hsl(var(--primary-foreground));
   font-family: var(--font-body), system-ui, sans-serif;
   font-weight: 600;
@@ -131,7 +131,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: hsl(var(--primary-hover));
+  background-color: hsl(var(--gold-700));
 }
 
 .btn-primary:focus-visible {
@@ -145,8 +145,8 @@ body {
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
-  border: 1.5px solid hsl(var(--primary));
-  color: hsl(var(--primary));
+  border: 1.5px solid hsl(var(--gold-600));
+  color: hsl(var(--gold-600));
   font-family: var(--font-body), system-ui, sans-serif;
   font-weight: 600;
   font-size: 0.9375rem;
@@ -156,7 +156,7 @@ body {
 }
 
 .btn-outline:hover {
-  background-color: hsl(var(--primary));
+  background-color: hsl(var(--gold-600));
   color: hsl(var(--primary-foreground));
 }
 
