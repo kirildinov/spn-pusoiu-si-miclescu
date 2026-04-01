@@ -33,7 +33,7 @@ const steps: Step[] = [
   {
     number: "04",
     icon: CheckCircle2,
-    title: "Finalizare",
+    title: "Predare",
     description:
       "Primiți actele autentificate și asigurăm înscrierea în registrele publice.",
   },

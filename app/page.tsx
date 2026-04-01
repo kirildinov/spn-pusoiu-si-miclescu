@@ -37,9 +37,9 @@ export default function Home() {
               </div>
 
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-secondary-foreground tracking-tight leading-[1.1] mb-6">
-                Actele Dumneavoastră,{" "}
-                <em className="text-gradient-gold not-italic">Autentificate</em>{" "}
-                cu Încredere
+                Autentificăm cu{" "}
+                <em className="text-gradient-gold not-italic">Precizie</em>,
+                Garantăm cu Încredere
               </h1>
 
               <p className="font-body text-lg text-secondary-foreground/80 leading-relaxed max-w-xl mb-8">
