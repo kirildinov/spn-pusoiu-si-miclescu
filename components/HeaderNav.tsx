@@ -103,7 +103,7 @@ export default function HeaderNav({ navLinks }: HeaderNavProps) {
                   className="btn-primary mt-4 justify-center"
                 >
                   <Phone className="w-4 h-4" strokeWidth={1.5} />
-                  {BUSINESS.phoneFormatted}
+                  Sună
                 </a>
               </nav>
             </div>

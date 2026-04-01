@@ -166,11 +166,10 @@ export default function Home() {
               {/* Floating stat card */}
               <div className="absolute -bottom-6 -right-2 lg:right-4 bg-card border border-border rounded-xl p-5 shadow-lg">
                 <p className="font-heading text-3xl font-bold text-primary">
-                  {BUSINESS.rating.value}
-                  <Star className="w-5 h-5 inline-block ml-1 -mt-1 fill-primary text-primary" />
+                  14+
                 </p>
                 <p className="font-body text-xs text-muted-foreground mt-1">
-                  din 135+ recenzii Google
+                  Ani Experiență
                 </p>
               </div>
             </div>
