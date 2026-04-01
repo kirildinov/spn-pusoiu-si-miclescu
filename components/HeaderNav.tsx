@@ -43,15 +43,23 @@ export default function HeaderNav({ navLinks }: HeaderNavProps) {
         ))}
       </nav>
 
-      {/* Mobile hamburger button */}
-      <button
-        type="button"
-        className="lg:hidden text-primary"
-        onClick={() => setIsOpen(true)}
-        aria-label="Deschide meniul"
-      >
-        <Menu className="w-7 h-7" />
-      </button>
+      {/* Mobile: Sună button + hamburger */}
+      <div className="flex items-center gap-3 lg:hidden">
+        <a
+          href={`tel:${BUSINESS.phone}`}
+          className="btn-primary text-sm px-3 py-2"
+        >
+          Sună
+        </a>
+        <button
+          type="button"
+          className="text-primary"
+          onClick={() => setIsOpen(true)}
+          aria-label="Deschide meniul"
+        >
+          <Menu className="w-7 h-7" />
+        </button>
+      </div>
 
       {/* Mobile nav panel */}
       {isOpen && (
