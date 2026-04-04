@@ -2,25 +2,30 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { MapPin, Clock, Award, Users } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import GoldRule from "@/components/GoldRule";
 import PlaceholderAvatar from "@/components/PlaceholderAvatar";
 
 export const metadata: Metadata = {
-  title: "Despre Noi — Notar Sector 3",
+  title: "Despre SPN Pușoiu și Miclescu | Notar Sector 3 București",
   description:
-    "Societatea Profesională Notarială Pușoiu Iuliana și Miclescu Bogdan Constantin. Notar public din 2012 pe Calea Călărașilor 311, Sector 3.",
+    "Societate Profesională Notarială din 2012 în Sector 3 București. Echipa noastră: Notar Pușoiu Iuliana și Notar Miclescu Bogdan Constantin.",
   openGraph: { type: "article" },
 };
 
 export default function DespreNoiPage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Acasă", url: `${BUSINESS.website}/` },
+        { name: "Despre Noi", url: `${BUSINESS.website}/despre-noi` },
+      ]} />
       {/* Hero */}
       <section className="bg-secondary py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <GoldRule />
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight">
-            Despre Noi
+            Despre Societatea Notarială Pușoiu și Miclescu
           </h1>
           <p className="font-body text-secondary-foreground/80 mt-4 max-w-2xl mx-auto text-lg">
             Societatea Profesională Notarială Pușoiu Iuliana și Miclescu Bogdan

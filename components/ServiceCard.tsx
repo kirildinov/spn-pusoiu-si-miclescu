@@ -7,7 +7,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ service }: ServiceCardProps) {
   return (
-    <Link href={`/servicii/${service.slug}`}>
+    <Link href={`/servicii-notariale/${service.slug}`}>
       <div className="bg-card border border-border rounded-lg p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
         <service.icon className="w-10 h-10 text-primary" strokeWidth={1.5} />
         <h3 className="font-heading text-xl font-semibold text-foreground mt-4 mb-2">

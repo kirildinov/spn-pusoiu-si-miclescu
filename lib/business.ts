@@ -59,8 +59,4 @@ export const BUSINESS = {
   foundedYear: 2012,
   notaries: ["Pușoiu Iuliana", "Miclescu Bogdan Constantin"] as const,
   priceRange: "$$",
-  translationPartner: {
-    name: "VreauTradus.ro",
-    url: "https://vreautradus.ro",
-  },
 } as const;

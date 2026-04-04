@@ -5,9 +5,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://notariat-public-bucuresti.ro";
   return [
     { url: base, lastModified: new Date(), priority: 1.0 },
-    { url: `${base}/servicii`, lastModified: new Date(), priority: 0.9 },
+    { url: `${base}/servicii-notariale`, lastModified: new Date(), priority: 0.9 },
     ...services.map((s) => ({
-      url: `${base}/servicii/${s.slug}`,
+      url: `${base}/servicii-notariale/${s.slug}`,
       lastModified: new Date(),
       priority: 0.8,
     })),

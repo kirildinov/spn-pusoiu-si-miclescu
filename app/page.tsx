@@ -53,7 +53,7 @@ export default function Home() {
                   Programați o Consultație
                   <ArrowRight className="w-4 h-4" />
                 </Link>
-                <Link href="/servicii" className="btn-hero-secondary text-base px-8 py-3.5">
+                <Link href="/servicii-notariale" className="btn-hero-secondary text-base px-8 py-3.5">
                   Serviciile Noastre
                 </Link>
               </div>
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/servicii" className="btn-outline">
+            <Link href="/servicii-notariale" className="btn-outline">
               Toate Serviciile
               <ArrowRight className="w-4 h-4" />
             </Link>

@@ -1,24 +1,29 @@
 import type { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import ContactForm from "@/components/ContactForm";
 import GoldRule from "@/components/GoldRule";
 
 export const metadata: Metadata = {
-  title: "Contact Notar Sector 3 București",
+  title: "Contact Notar Public Sector 3 București | SPN Miclescu",
   description:
-    "Contactați notariatul Pușoiu și Miclescu pe Calea Călărașilor 311, Sector 3. Telefon: 0731 467 071. Program: Luni-Vineri 09:00-17:00.",
+    "Contactați notariatul nostru din Sector 3 București: ☎ 0731 467 071. Calea Călărașilor 311. Program Luni-Vineri 09:00-17:00. WhatsApp disponibil.",
   openGraph: { type: "website" },
 };
 
 export default function ContactPage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Acasă", url: `${BUSINESS.website}/` },
+        { name: "Contact", url: `${BUSINESS.website}/contact` },
+      ]} />
       <section className="bg-secondary py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <GoldRule />
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight">
-            Contact
+            Contact — Notar Public Sector 3 București
           </h1>
           <p className="font-body text-secondary-foreground/80 mt-4 max-w-2xl mx-auto text-lg">
             Programați o vizită sau trimiteți-ne un mesaj. Suntem disponibili

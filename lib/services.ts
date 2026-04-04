@@ -92,9 +92,9 @@ export const services: Service[] = [
           "Nu. Certificatul de performanță energetică este obligatoriu pentru orice tranzacție imobiliară, conform Legii nr. 372/2005.",
       },
     ],
-    metaTitle: "Contracte Vânzare-Cumpărare Notar",
+    metaTitle: "Contracte Vânzare-Cumpărare Notar București Sector 3",
     metaDescription:
-      "Autentificăm contracte de vânzare-cumpărare pentru apartamente, case, terenuri. Notar public Sector 3, Calea Călărașilor 311. Finalizare în aceeași zi.",
+      "Redactare și autentificare contracte vânzare-cumpărare imobiliare la notar în Sector 3 București. Acte necesare, tarife, programare rapidă.",
     schemaServiceType: "NotarialService",
   },
   {
@@ -154,9 +154,9 @@ export const services: Service[] = [
           "Moștenitorul din străinătate poate da procură specială la consulatul sau ambasada României, sau la un notar local cu apostilă.",
       },
     ],
-    metaTitle: "Succesiuni Notar Sector 3 București",
+    metaTitle: "Succesiuni Notariale București Sector 3 | SPN Miclescu",
     metaDescription:
-      "Dezbaterea succesiunii la notar în Sector 3. Certificat de moștenitor, succesiuni legale și testamentare. Programări la 0731 467 071.",
+      "Procedura succesorală notarială în Sector 3 București. Acte necesare, termene, certificat moștenitor. Programare la ☎ 0731 467 071.",
     schemaServiceType: "NotarialService",
   },
   {
@@ -208,13 +208,13 @@ export const services: Service[] = [
           "Onorariul notarial pentru divorț este reglementat prin Ordinul ministrului justiției. Contactați-ne pentru tariful exact aplicabil situației dumneavoastră.",
       },
     ],
-    metaTitle: "Divorț la Notar Sector 3 București",
+    metaTitle: "Divorț la Notar București Sector 3 | Procedură Rapidă",
     metaDescription:
-      "Divorț prin acord la notar în Sector 3, finalizat în 30 de zile. Fără instanță, procedură rapidă și discretă. Tel: 0731 467 071.",
+      "Procedura de divorț la notar în București Sector 3. Rapid, fără instanță. Acte necesare, condiții, tarife. Contactați-ne: 0731 467 071.",
     schemaServiceType: "NotarialService",
   },
   {
-    slug: "procuri",
+    slug: "procuri-notariale",
     name: "Procuri Notariale",
     icon: ScrollText,
     shortDescription:
@@ -271,9 +271,9 @@ export const services: Service[] = [
           "Procura este valabilă pe perioada menționată în act. Dacă nu se specifică termen, rămâne valabilă până la revocare sau îndeplinirea scopului.",
       },
     ],
-    metaTitle: "Procuri Notariale Sector 3 București",
+    metaTitle: "Procuri Notariale București Sector 3 | SPN Miclescu",
     metaDescription:
-      "Procuri generale, speciale, auto, pașaport copil. Autentificare rapidă la notar Sector 3. Calea Călărașilor 311. Tel: 0731 467 071.",
+      "Procuri notariale generale, speciale și auto la notar în Sector 3 București. Autentificare pe loc, acte necesare, tarife. ☎ 0731 467 071.",
     schemaServiceType: "NotarialService",
   },
   {
@@ -324,13 +324,13 @@ export const services: Service[] = [
           "Onorariul este stabilit prin ordin al ministrului justiției. Contactați-ne pentru tariful exact.",
       },
     ],
-    metaTitle: "Declarații Notariale Sector 3",
+    metaTitle: "Declarații Notariale București Sector 3 | SPN Miclescu",
     metaDescription:
-      "Declarații pe propria răspundere, declarații de notorietate, certificări de fapte. Notar public Calea Călărașilor 311, Sector 3.",
+      "Declarații pe propria răspundere, declarații de notorietate și certificări de fapte la notar în Sector 3 București. Eliberare pe loc. ☎ 0731 467 071.",
     schemaServiceType: "NotarialService",
   },
   {
-    slug: "contracte-donatie-schimb",
+    slug: "donatii",
     name: "Donații, Schimburi și Partaje",
     icon: Gift,
     shortDescription:
@@ -372,9 +372,9 @@ export const services: Service[] = [
           "Donația este în principiu irevocabilă. Revocarea este posibilă doar în cazuri strict prevăzute de lege: ingratitudine sau neexecutarea sarcinilor.",
       },
     ],
-    metaTitle: "Donații și Partaje Notar Sector 3",
+    metaTitle: "Donații Notariale București Sector 3 | SPN Miclescu",
     metaDescription:
-      "Contracte de donație, schimb de imobile, partaj voluntar. Autentificare la notar public Sector 3, Calea Călărașilor 311.",
+      "Contract de donație la notar public în Sector 3 București. Donații imobiliare, mobiliare, acte necesare, taxe. ☎ 0731 467 071.",
     schemaServiceType: "NotarialService",
   },
   {
@@ -439,7 +439,7 @@ export const services: Service[] = [
           "Darea în plată este operațiunea juridică prin care debitorul stinge o datorie prin transmiterea unui alt bun decât cel datorat, cu acordul creditorului.",
       },
     ],
-    metaTitle: "Contracte și Garanții Notar Sector 3",
+    metaTitle: "Contracte Garanții Notar București Sector 3 | SPN Miclescu",
     metaDescription:
       "Ipotecă, împrumut, gaj, dare în plată, întreținere, închiriere. Autentificare la notar public Sector 3, București.",
     schemaServiceType: "NotarialService",
@@ -496,7 +496,7 @@ export const services: Service[] = [
           "Da, duplicatul se eliberează de notarul care a întocmit actul original, din arhiva biroului notarial.",
       },
     ],
-    metaTitle: "Legalizări Copii Acte Notar Sector 3",
+    metaTitle: "Legalizări Copii Acte Notar București | SPN Miclescu",
     metaDescription:
       "Copii legalizate, legalizare semnătură, specimene, duplicate acte notariale. Notar public Sector 3, Calea Călărașilor 311.",
     schemaServiceType: "NotarialService",
@@ -550,7 +550,7 @@ export const services: Service[] = [
           "Autentificarea actului de dezmembrare se realizează în aceeași zi. Documentația cadastrală trebuie pregătită anterior de un inginer cadastrist autorizat.",
       },
     ],
-    metaTitle: "Acte Societăți Notar Sector 3",
+    metaTitle: "Acte Societăți Notar București Sector 3 | SPN Miclescu",
     metaDescription:
       "Acte constitutive, cesiuni părți sociale, AGA, dezmembrări, alipiri. Servicii notariale pentru firme, Sector 3, București.",
     schemaServiceType: "NotarialService",
@@ -560,9 +560,9 @@ export const services: Service[] = [
     name: "Traduceri și Apostilare",
     icon: Languages,
     shortDescription:
-      "Traduceri legalizate, apostilă Haga, supralegalizare. Parteneriat cu VreauTradus.ro.",
+      "Traduceri legalizate, apostilă Haga, supralegalizare. Peste 30 de limbi disponibile.",
     fullDescription:
-      "Oferim servicii de legalizare a traducerilor efectuate de traducători autorizați. Colaborăm cu VreauTradus.ro pentru traduceri rapide în peste 30 de limbi. De asemenea, oferim informații și asistență pentru procedura de apostilare și supralegalizare a actelor.",
+      "Oferim servicii de legalizare a traducerilor efectuate de traducători autorizați de Ministerul Justiției, în peste 30 de limbi. De asemenea, oferim informații și asistență pentru procedura de apostilare și supralegalizare a actelor.",
     subServices: [
       {
         name: "Legalizare traducere",
@@ -572,7 +572,7 @@ export const services: Service[] = [
       {
         name: "Traduceri autorizate",
         description:
-          "Traduceri prin partenerul nostru VreauTradus.ro, în peste 30 de limbi.",
+          "Traduceri autorizate în peste 30 de limbi, coordonate direct cu biroul nostru.",
       },
       {
         name: "Apostilă Haga",
@@ -594,7 +594,7 @@ export const services: Service[] = [
       {
         question: "Cât durează o traducere legalizată?",
         answer:
-          "Legalizarea traducerii se face în aceeași zi. Traducerea propriu-zisă, prin partenerul nostru VreauTradus.ro, durează 1-3 zile lucrătoare în funcție de volum și limba.",
+          "Legalizarea traducerii se face în aceeași zi. Traducerea propriu-zisă durează 1-3 zile lucrătoare în funcție de volum și limba.",
       },
       {
         question: "Ce este apostila Haga?",
@@ -604,12 +604,12 @@ export const services: Service[] = [
       {
         question: "Pot obține traducerea și legalizarea în același loc?",
         answer:
-          "Da. Prin partenerul nostru VreauTradus.ro, puteți comanda traducerea, iar noi o legalizăm la birou. Întregul proces poate fi coordonat de la distanță.",
+          "Da. Puteți trimite actele prin email, iar noi coordonăm traducerea și legalizarea. Întregul proces poate fi gestionat de la distanță.",
       },
     ],
-    metaTitle: "Traduceri Legalizate Notar Sector 3",
+    metaTitle: "Traduceri Legalizate Notar București | SPN Miclescu",
     metaDescription:
-      "Traduceri legalizate, apostilă Haga, supralegalizare. Parteneriat VreauTradus.ro. Notar public Sector 3, Calea Călărașilor 311.",
+      "Traduceri legalizate și apostilate la notar public în Sector 3 București. Limbi disponibile, tarife, termen de execuție.",
     schemaServiceType: "NotarialService",
   },
 ];

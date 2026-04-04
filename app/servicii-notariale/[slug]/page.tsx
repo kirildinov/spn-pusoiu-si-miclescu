@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, CheckCircle2, FileText, ChevronDown } from "lucide-react";
 import { services } from "@/lib/services";
 import { BUSINESS } from "@/lib/business";
-import { ServiceSchema, FAQSchema } from "@/components/StructuredData";
+import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import GoldRule from "@/components/GoldRule";
 
 interface Props {
@@ -36,6 +36,11 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Acasă", url: `${BUSINESS.website}/` },
+        { name: "Servicii", url: `${BUSINESS.website}/servicii-notariale` },
+        { name: service.name, url: `${BUSINESS.website}/servicii-notariale/${service.slug}` },
+      ]} />
       <ServiceSchema service={service} />
       {service.faqs.length > 0 && <FAQSchema faqs={service.faqs} />}
 
@@ -43,7 +48,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       <section className="bg-secondary py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-6">
           <Link
-            href="/servicii"
+            href="/servicii-notariale"
             className="inline-flex items-center gap-2 text-secondary-foreground/60 hover:text-primary transition-colors text-sm mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -54,7 +59,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               <Icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
             </div>
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-foreground">
-              {service.name}
+              {service.name} în București
             </h1>
           </div>
           <p className="font-body text-secondary-foreground/80 text-lg max-w-3xl">
@@ -202,7 +207,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               .map((s) => (
                 <Link
                   key={s.slug}
-                  href={`/servicii/${s.slug}`}
+                  href={`/servicii-notariale/${s.slug}`}
                   className="bg-card border border-border rounded-lg p-5 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-4"
                 >
                   <s.icon className="w-8 h-8 text-primary shrink-0" strokeWidth={1.5} />

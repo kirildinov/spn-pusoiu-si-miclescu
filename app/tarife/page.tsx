@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone, ArrowRight, Info } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import GoldRule from "@/components/GoldRule";
 
 export const metadata: Metadata = {
-  title: "Tarife Notar Public Sector 3",
+  title: "Tarife Notariale 2026 București | SPN Miclescu Sector 3",
   description:
-    "Informații despre tarifele notariale. Onorarii stabilite prin ordin al ministrului justiției. Notar Sector 3, Calea Călărașilor 311.",
+    "Tarife notariale actualizate 2026. Onorarii pentru contracte, succesiuni, procuri, traduceri. Prețuri transparente. Sector 3 București.",
   openGraph: { type: "website" },
 };
 
@@ -69,11 +70,15 @@ const tarifCategories = [
 export default function TarifePage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Acasă", url: `${BUSINESS.website}/` },
+        { name: "Tarife", url: `${BUSINESS.website}/tarife` },
+      ]} />
       <section className="bg-secondary py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <GoldRule />
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight">
-            Tarife
+            Tarife Notariale 2026
           </h1>
           <p className="font-body text-secondary-foreground/80 mt-4 max-w-2xl mx-auto text-lg">
             Onorariile notariale sunt stabilite prin Ordinul ministrului

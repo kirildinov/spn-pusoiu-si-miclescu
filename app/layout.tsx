@@ -25,16 +25,16 @@ const inter = Inter({
   display: "swap",
 });
 
-const GTM_ID = "GTM-XXXXXXXX";
+const GTM_ID = "GTM-XXXXXXXX"; // TODO: Replace with real GTM container ID before go-live
 
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.website),
   title: {
-    default: "Notar Public Sector 3 București | SPN Pușoiu și Miclescu",
-    template: "%s | SPN Pușoiu și Miclescu",
+    default: "Notar Public București Sector 3 | SPN Pușoiu și Miclescu",
+    template: "%s",
   },
   description:
-    "Servicii notariale în Sector 3, București. Vânzări, succesiuni, divorțuri, procuri, traduceri. 4.6★ din 136 recenzii. Tel: 0731 467 071.",
+    "Servicii notariale complete în Sector 3 București. Autentificări, succesiuni, procuri, traduceri legalizate. Programare fără așteptare. ☎ 0731 467 071",
   openGraph: {
     type: "website",
     locale: "ro_RO",

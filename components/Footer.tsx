@@ -1,14 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import BookplateLockup from "@/components/BookplateLockup";
 import { BUSINESS } from "@/lib/business";
 import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react";
 
 const serviceLinks = [
-  { href: "/servicii/contracte-vanzare-cumparare", label: "Contracte Vânzare-Cumpărare" },
-  { href: "/servicii/succesiuni", label: "Succesiuni" },
-  { href: "/servicii/divort-la-notar", label: "Divorț la Notar" },
-  { href: "/servicii/procuri", label: "Procuri Notariale" },
-  { href: "/servicii/declaratii-notariale", label: "Declarații Notariale" },
+  { href: "/servicii-notariale/contracte-vanzare-cumparare", label: "Contracte Vânzare-Cumpărare" },
+  { href: "/servicii-notariale/succesiuni", label: "Succesiuni" },
+  { href: "/servicii-notariale/divort-la-notar", label: "Divorț la Notar" },
+  { href: "/servicii-notariale/procuri-notariale", label: "Procuri Notariale" },
+  { href: "/servicii-notariale/declaratii-notariale", label: "Declarații Notariale" },
 ];
 
 const infoLinks = [
@@ -104,6 +106,15 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new Event("reopen-cookie-consent"))}
+                className="text-secondary-foreground/70 hover:text-primary transition-colors text-sm"
+              >
+                Setări Cookie-uri
+              </button>
+            </li>
           </ul>
         </div>
 

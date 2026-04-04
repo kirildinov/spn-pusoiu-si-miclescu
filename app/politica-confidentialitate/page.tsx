@@ -1,17 +1,22 @@
 import type { Metadata } from "next";
 import { BUSINESS } from "@/lib/business";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import GoldRule from "@/components/GoldRule";
 
 export const metadata: Metadata = {
-  title: "Politica de Confidențialitate",
+  title: "Politica de Confidențialitate | SPN Pușoiu și Miclescu",
   description:
-    "Politica de confidențialitate a SPN Pușoiu și Miclescu. Informații despre prelucrarea datelor personale conform GDPR.",
+    "Politica de confidențialitate a Societății Profesionale Notariale Pușoiu și Miclescu. Prelucrarea datelor conform GDPR.",
   openGraph: { type: "article" },
 };
 
 export default function PoliticaConfidentialitatePage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Acasă", url: `${BUSINESS.website}/` },
+        { name: "Politica de Confidențialitate", url: `${BUSINESS.website}/politica-confidentialitate` },
+      ]} />
       <section className="bg-secondary py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <GoldRule />

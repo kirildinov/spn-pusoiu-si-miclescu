@@ -50,6 +50,10 @@ export default function CookieConsent() {
     } else {
       setVisible(true);
     }
+
+    const handleReopen = () => setVisible(true);
+    window.addEventListener("reopen-cookie-consent", handleReopen);
+    return () => window.removeEventListener("reopen-cookie-consent", handleReopen);
   }, []);
 
   const handleAccept = () => {

@@ -5,7 +5,7 @@ import { BUSINESS } from "@/lib/business";
 
 const navLinks = [
   { href: "/", label: "Acasă" },
-  { href: "/servicii", label: "Servicii" },
+  { href: "/servicii-notariale", label: "Servicii" },
   { href: "/despre-noi", label: "Despre Noi" },
   { href: "/tarife", label: "Tarife" },
   { href: "/traduceri", label: "Traduceri" },

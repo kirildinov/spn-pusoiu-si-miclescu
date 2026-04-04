@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Languages, CheckCircle2, ArrowRight, ExternalLink, Phone } from "lucide-react";
+import { Languages, CheckCircle2, ArrowRight, Phone } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import GoldRule from "@/components/GoldRule";
 
 export const metadata: Metadata = {
-  title: "Traduceri Legalizate Notar",
+  title: "Traduceri Legalizate Notar București | SPN Miclescu",
   description:
-    "Traduceri legalizate, apostilă Haga, supralegalizare. Parteneriat cu VreauTradus.ro. Notar public Sector 3, Calea Călărașilor 311.",
+    "Traduceri legalizate și apostilate la notar public în Sector 3 București. Limbi disponibile, tarife, termen de execuție.",
   openGraph: { type: "article" },
 };
 
@@ -33,15 +34,18 @@ const languages = [
 export default function TraduceriPage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Acasă", url: `${BUSINESS.website}/` },
+        { name: "Traduceri Legalizate", url: `${BUSINESS.website}/traduceri` },
+      ]} />
       <section className="bg-secondary py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <GoldRule />
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight">
-            Traduceri Legalizate
+            Traduceri Legalizate la Notar în București
           </h1>
           <p className="font-body text-secondary-foreground/80 mt-4 max-w-2xl mx-auto text-lg">
-            Legalizăm traduceri efectuate de traducători autorizați. Colaborăm
-            cu VreauTradus.ro pentru traduceri rapide în peste 30 de limbi.
+            Legalizăm traduceri efectuate de traducători autorizați în peste 30 de limbi.
           </p>
         </div>
       </section>
@@ -75,8 +79,7 @@ export default function TraduceriPage() {
                   Traducere Autorizată
                 </h3>
                 <p className="font-body text-sm text-muted-foreground">
-                  Traducerea este realizată de traducători autorizați prin
-                  partenerul nostru VreauTradus.ro.
+                  Traducerea este realizată de traducători autorizați de Ministerul Justiției.
                 </p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6 text-center">
@@ -106,7 +109,7 @@ export default function TraduceriPage() {
                   desc: "Legalizarea traducerilor efectuate de traducători autorizați de Ministerul Justiției.",
                 },
                 {
-                  title: "Traduceri prin VreauTradus.ro",
+                  title: "Traduceri Autorizate",
                   desc: "Traduceri autorizate rapide în peste 30 de limbi, coordonate direct cu biroul nostru.",
                 },
                 {
@@ -154,26 +157,6 @@ export default function TraduceriPage() {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Partner CTA */}
-          <div className="bg-gold-50 border border-gold-200 rounded-xl p-8 text-center">
-            <h3 className="font-heading text-xl font-bold text-foreground mb-2">
-              Partenerul Nostru de Traduceri
-            </h3>
-            <p className="font-body text-muted-foreground mb-4">
-              Colaborăm cu VreauTradus.ro pentru traduceri rapide și de
-              calitate în peste 30 de limbi.
-            </p>
-            <a
-              href={BUSINESS.translationPartner.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              {BUSINESS.translationPartner.name}
-              <ExternalLink className="w-4 h-4" />
-            </a>
           </div>
 
           {/* Contact */}
