@@ -165,11 +165,11 @@ export default function Home() {
               </div>
               {/* Floating stat card */}
               <div className="absolute -bottom-6 -right-2 lg:right-4 bg-card border border-border rounded-xl p-5 shadow-lg">
-                <p className="font-heading text-3xl font-bold text-primary">
-                  14+
+                <p className="font-heading text-lg font-bold text-foreground leading-tight">
+                  Miclescu Bogdan Constantin
                 </p>
-                <p className="font-body text-xs text-muted-foreground mt-1">
-                  Ani Experiență
+                <p className="font-body text-xs text-primary mt-1">
+                  Notar Public
                 </p>
               </div>
             </div>
