@@ -89,11 +89,6 @@ export default function DespreNoiPage() {
                 <p className="font-body text-primary text-sm font-medium mt-1">
                   Notar Public
                 </p>
-                <p className="font-body text-muted-foreground text-sm mt-3 leading-relaxed">
-                  Notar public cu experiență în autentificări de contracte,
-                  succesiuni și acte de familie. Abordare profesionistă și
-                  orientată către soluții.
-                </p>
               </div>
             </div>
 
@@ -112,10 +107,6 @@ export default function DespreNoiPage() {
                 </h3>
                 <p className="font-body text-primary text-sm font-medium mt-1">
                   Notar Public
-                </p>
-                <p className="font-body text-muted-foreground text-sm mt-3 leading-relaxed">
-                  Notar public specializat în tranzacții imobiliare, acte pentru
-                  societăți comerciale și proceduri de dezmembrare-alipire.
                 </p>
               </div>
             </div>
