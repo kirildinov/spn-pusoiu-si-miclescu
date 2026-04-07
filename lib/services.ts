@@ -218,14 +218,14 @@ export const services: Service[] = [
     name: "Procuri Notariale",
     icon: ScrollText,
     shortDescription:
-      "Procuri generale, speciale, pentru auto, imobile, pașaport copil și reprezentare în instanță.",
+      "Procuri administrarea bunurilor imobile, speciale, pentru auto, pașaport copil și reprezentare în instanță.",
     fullDescription:
-      "Autentificăm toate tipurile de procuri notariale: procuri generale de administrare, procuri speciale pentru vânzarea de imobile sau vehicule, procuri pentru obținerea pașaportului copilului minor, procuri pentru reprezentare în fața autorităților și instanțelor.",
+      "Autentificăm toate tipurile de procuri notariale: procuri de administrare, procuri speciale pentru vânzarea de imobile sau vehicule, procuri pentru obținerea pașaportului copilului minor, procuri pentru reprezentare în fața autorităților și instanțelor.",
     subServices: [
       {
-        name: "Procură generală",
+        name: "Procură administrarea bunurilor imobile",
         description:
-          "Împuternicire pentru administrarea generală a bunurilor și intereselor.",
+          "Împuternicire pentru administrarea bunurilor imobile ale mandantului.",
       },
       {
         name: "Procură specială vânzare imobil",
