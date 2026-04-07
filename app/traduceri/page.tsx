@@ -45,7 +45,17 @@ export default function TraduceriPage() {
             Traduceri Legalizate la Notar în București
           </h1>
           <p className="font-body text-secondary-foreground/80 mt-4 max-w-2xl mx-auto text-lg">
-            Legalizăm traduceri efectuate de traducători autorizați în peste 30 de limbi.
+            Legalizăm traduceri efectuate de traducători autorizați în peste 30
+            de limbi, în parteneriat cu{" "}
+            <a
+              href="https://omniadatrad.ro/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary-hover underline transition-colors"
+            >
+              Omniada Traduceri
+            </a>
+            .
           </p>
         </div>
       </section>
@@ -79,7 +89,17 @@ export default function TraduceriPage() {
                   Traducere Autorizată
                 </h3>
                 <p className="font-body text-sm text-muted-foreground">
-                  Traducerea este realizată de traducători autorizați de Ministerul Justiției.
+                  Traducerea este realizată de traducători autorizați de
+                  Ministerul Justiției, prin partenerul nostru{" "}
+                  <a
+                    href="https://omniadatrad.ro/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary-hover underline transition-colors"
+                  >
+                    Omniada Traduceri
+                  </a>
+                  .
                 </p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6 text-center">
@@ -110,7 +130,7 @@ export default function TraduceriPage() {
                 },
                 {
                   title: "Traduceri Autorizate",
-                  desc: "Traduceri autorizate rapide în peste 30 de limbi, coordonate direct cu biroul nostru.",
+                  desc: "Traduceri autorizate rapide în peste 30 de limbi, realizate în parteneriat cu Omniada Traduceri și coordonate direct cu biroul nostru.",
                 },
                 {
                   title: "Apostilă Haga",
