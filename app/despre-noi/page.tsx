@@ -4,7 +4,6 @@ import { MapPin, Clock, Award, Users } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 import { BreadcrumbSchema } from "@/components/StructuredData";
 import GoldRule from "@/components/GoldRule";
-import PlaceholderAvatar from "@/components/PlaceholderAvatar";
 
 export const metadata: Metadata = {
   title: "Despre SPN Pușoiu și Miclescu | Notar Sector 3 București",
@@ -86,9 +85,12 @@ export default function DespreNoiPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Pușoiu Iuliana */}
             <div className="bg-card border border-border rounded-xl overflow-hidden shadow-sm">
-              <PlaceholderAvatar
-                initials="PI"
-                className="w-full aspect-[4/5]"
+              <Image
+                src="/team-pusoiu-iuliana.webp"
+                alt="Notar public Pușoiu Iuliana"
+                width={400}
+                height={500}
+                className="w-full aspect-[4/5] object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="font-heading text-2xl font-bold text-foreground">
