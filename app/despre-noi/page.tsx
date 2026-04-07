@@ -40,24 +40,32 @@ export default function DespreNoiPage() {
           <div className="drop-cap">
             <p className="font-body text-foreground/80 leading-relaxed text-lg mb-6">
               Societatea Profesională Notarială Pușoiu Iuliana și Miclescu
-              Bogdan Constantin funcționează din anul 2012 pe Calea Călărașilor
-              311, în Sectorul 3 al Municipiului București. De-a lungul anilor,
-              am construit o practică notarială bazată pe precizie, eficiență și
-              respectul față de fiecare client care ne trece pragul.
+              Bogdan Constantin funcționează din anul 2012, pe Calea Călărașilor
+              nr. 311, în Sectorul 3 al Municipiului București. De-a lungul
+              anilor, am construit o practică notarială bazată pe precizie,
+              eficiență și respect față de fiecare client care ne trece pragul.
             </p>
           </div>
           <p className="font-body text-foreground/80 leading-relaxed text-lg mb-6">
-            Biroul nostru se află la parter, cu intrare stradală directă, vis-a-vis
-            de Casa de Asigurări de Sănătate și benzinăria MOL. Locația este
-            accesibilă cu transportul public — la 2 minute de mers pe jos de
-            stația de metrou Piața Muncii.
+            Biroul nostru este situat la parter, cu intrare stradală directă,
+            vis-a-vis de Casa de Asigurări de Sănătate și de benzinăria MOL.
+            Locația este ușor accesibilă și cu mijloacele de transport în comun,
+            aflându-se la doar 2 minute de mers pe jos de stația de metrou Piața
+            Muncii.
+          </p>
+          <p className="font-body text-foreground/80 leading-relaxed text-lg mb-6">
+            Oferim servicii notariale complete, atât pentru persoane fizice, cât
+            și pentru persoane juridice: autentificări de contracte, succesiuni,
+            divorțuri, procuri, declarații, legalizări, acte pentru societăți și
+            traduceri legalizate. Fiecare act este întocmit cu atenție la
+            detalii și cu respectarea tuturor cerințelor legale.
           </p>
           <p className="font-body text-foreground/80 leading-relaxed text-lg">
-            Oferim servicii notariale complete pentru persoane fizice și juridice:
-            autentificări de contracte, succesiuni, divorțuri, procuri,
-            declarații, legalizări, acte pentru societăți și traduceri
-            legalizate. Fiecare act este întocmit cu atenție la detalii și cu
-            respectarea tuturor cerințelor legale.
+            În măsura în care natura actului permite, încurajăm întocmirea pe
+            loc a documentelor cu grad redus de complexitate, prin intermediul
+            unui departament dedicat acestor servicii. Astfel, pentru acte
+            precum declarațiile de călătorie pentru minori în afara țării sau
+            procurile cu caracter contabil, oferim soluții rapide și eficiente.
           </p>
         </div>
       </section>

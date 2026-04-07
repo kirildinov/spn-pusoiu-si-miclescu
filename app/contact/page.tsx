@@ -27,7 +27,9 @@ export default function ContactPage() {
           </h1>
           <p className="font-body text-secondary-foreground/80 mt-4 max-w-2xl mx-auto text-lg">
             Programați o vizită sau trimiteți-ne un mesaj. Suntem disponibili
-            în zilele lucrătoare între orele 09:00 și 17:00.
+            în zilele lucrătoare între orele 09:00 și 17:00. Pentru situații
+            speciale, cu o programare în prealabil, putem stabili o întâlnire
+            și pentru ziua de sâmbătă.
           </p>
         </div>
       </section>
