@@ -79,7 +79,7 @@ export const services: Service[] = [
         question:
           "Cât durează autentificarea unui contract de vânzare-cumpărare?",
         answer:
-          "Procedura se finalizează în aceeași zi, de obicei în 1-2 ore. Extrasul de Carte Funciară este solicitat anterior și este valabil 10 zile lucrătoare.",
+          "Procedura aferentă încheierii contractului de vânzare a unui bun imobil presupune trei etape esențiale: primirea actelor de proprietate din partea părților, verificarea și analiza acestora, urmată de stabilirea, de comun acord, a datei pentru semnarea contractului de vânzare. Pentru confortul părților, documentele pot fi depuse atât fizic, la birou, cât și transmise online, prin mijloace moderne de comunicare, precum e-mail, WhatsApp sau alte canale electronice, în vederea analizei prealabile.",
       },
       {
         question: "Cine plătește taxele notariale la vânzare?",

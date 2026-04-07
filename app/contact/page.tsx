@@ -59,7 +59,7 @@ export default function ContactPage() {
                         <a
                           key={phone}
                           href={`tel:${phone}`}
-                          className="block font-body text-sm text-muted-foreground hover:text-primary transition-colors"
+                          className="block font-body text-primary hover:text-primary-hover transition-colors text-lg font-semibold"
                         >
                           {BUSINESS.phoneSecondaryFormatted[i]}
                         </a>
@@ -97,6 +97,17 @@ export default function ContactPage() {
                     >
                       {BUSINESS.email}
                     </a>
+                    <div className="mt-1 space-y-0.5">
+                      {BUSINESS.emailSecondary.map((email) => (
+                        <a
+                          key={email}
+                          href={`mailto:${email}`}
+                          className="block font-body text-primary hover:text-primary-hover transition-colors"
+                        >
+                          {email}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
 

@@ -68,6 +68,17 @@ export default function Footer() {
                 {BUSINESS.email}
               </a>
             </li>
+            {BUSINESS.emailSecondary.map((email) => (
+              <li key={email}>
+                <a
+                  href={`mailto:${email}`}
+                  className="flex items-center gap-2 text-secondary-foreground/70 hover:text-primary transition-colors text-sm"
+                >
+                  <Mail className="w-4 h-4 shrink-0" strokeWidth={1.5} />
+                  {email}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
