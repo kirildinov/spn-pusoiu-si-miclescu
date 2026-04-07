@@ -38,27 +38,27 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "contracte-vanzare-cumparare",
-    name: "Contracte Vânzare-Cumpărare",
+    slug: "contracte-vanzare",
+    name: "Contracte Vânzare",
     icon: FileText,
     shortDescription:
-      "Autentificăm contracte de vânzare-cumpărare pentru apartamente, case, terenuri și spații comerciale.",
+      "Autentificăm contracte de vânzare pentru apartamente, case, terenuri și spații comerciale.",
     fullDescription:
-      "Autentificăm contracte de vânzare-cumpărare pentru toate tipurile de imobile: apartamente, case, terenuri, spații comerciale și garaje. Verificăm situația juridică a proprietății, întocmim actul și asigurăm înscrierea în Cartea Funciară. Procedura se finalizează în aceeași zi.",
+      "Autentificăm contracte de vânzare pentru toate tipurile de imobile: apartamente, case, terenuri, spații comerciale și garaje. Verificăm situația juridică a proprietății, întocmim actul și asigurăm înscrierea în Cartea Funciară. Procedura se finalizează în aceeași zi.",
     subServices: [
       {
-        name: "Vânzare-cumpărare apartament",
+        name: "Vânzare apartament",
         description: "Autentificarea contractului de vânzare pentru locuințe.",
       },
       {
-        name: "Vânzare-cumpărare teren",
+        name: "Vânzare teren",
         description:
           "Contracte pentru terenuri intravilane și extravilane.",
       },
       {
         name: "Antecontract de vânzare",
         description:
-          "Promisiune bilaterală de vânzare-cumpărare cu clauze de arvună.",
+          "Promisiune bilaterală de vânzare cu clauze de arvună.",
       },
       {
         name: "Vânzare spații comerciale",
@@ -77,7 +77,7 @@ export const services: Service[] = [
     faqs: [
       {
         question:
-          "Cât durează autentificarea unui contract de vânzare-cumpărare?",
+          "Cât durează autentificarea unui contract de vânzare?",
         answer:
           "Procedura aferentă încheierii contractului de vânzare a unui bun imobil presupune trei etape esențiale: primirea actelor de proprietate din partea părților, verificarea și analiza acestora, urmată de stabilirea, de comun acord, a datei pentru semnarea contractului de vânzare. Pentru confortul părților, documentele pot fi depuse atât fizic, la birou, cât și transmise online, prin mijloace moderne de comunicare, precum e-mail, WhatsApp sau alte canale electronice, în vederea analizei prealabile.",
       },
@@ -92,9 +92,9 @@ export const services: Service[] = [
           "Nu. Certificatul de performanță energetică este obligatoriu pentru orice tranzacție imobiliară, conform Legii nr. 372/2005.",
       },
     ],
-    metaTitle: "Contracte Vânzare-Cumpărare Notar București Sector 3",
+    metaTitle: "Contracte Vânzare Notar București Sector 3",
     metaDescription:
-      "Redactare și autentificare contracte vânzare-cumpărare imobiliare la notar în Sector 3 București. Acte necesare, tarife, programare rapidă.",
+      "Redactare și autentificare contracte vânzare imobiliare la notar în Sector 3 București. Acte necesare, tarife, programare rapidă.",
     schemaServiceType: "NotarialService",
   },
   {

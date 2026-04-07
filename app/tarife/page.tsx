@@ -16,7 +16,7 @@ const tarifCategories = [
   {
     title: "Autentificări Contracte",
     items: [
-      "Contract de vânzare-cumpărare imobil",
+      "Contract de vânzare imobil",
       "Antecontract de vânzare",
       "Contract de donație",
       "Contract de schimb",

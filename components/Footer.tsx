@@ -6,7 +6,7 @@ import { BUSINESS } from "@/lib/business";
 import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react";
 
 const serviceLinks = [
-  { href: "/servicii-notariale/contracte-vanzare-cumparare", label: "Contracte Vânzare-Cumpărare" },
+  { href: "/servicii-notariale/contracte-vanzare", label: "Contracte Vânzare" },
   { href: "/servicii-notariale/succesiuni", label: "Succesiuni" },
   { href: "/servicii-notariale/divort-la-notar", label: "Divorț la Notar" },
   { href: "/servicii-notariale/procuri-notariale", label: "Procuri Notariale" },

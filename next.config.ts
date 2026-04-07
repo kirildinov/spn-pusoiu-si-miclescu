@@ -21,7 +21,8 @@ const config: NextConfig = {
   async redirects() {
     return [
       // Old Joomla content pages → new routes
-      { source: "/index.php/acte-necesare/acte-vanzare", destination: "/servicii-notariale/contracte-vanzare-cumparare", permanent: true },
+      { source: "/index.php/acte-necesare/acte-vanzare", destination: "/servicii-notariale/contracte-vanzare", permanent: true },
+      { source: "/servicii-notariale/contracte-vanzare-cumparare", destination: "/servicii-notariale/contracte-vanzare", permanent: true },
       { source: "/index.php/acte-necesare/acte-succesiune", destination: "/servicii-notariale/succesiuni", permanent: true },
       { source: "/index.php/acte-necesare/procedura-divort", destination: "/servicii-notariale/divort-la-notar", permanent: true },
       { source: "/index.php/acte-necesare/acte-deplasare", destination: "/contact", permanent: true },
