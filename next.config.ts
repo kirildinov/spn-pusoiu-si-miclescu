@@ -49,7 +49,6 @@ const config: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   experimental: {
-    inlineCss: true,
     optimizePackageImports: ["lucide-react"],
   },
 };

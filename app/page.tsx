@@ -44,7 +44,7 @@ export default function Home() {
 
               <p className="font-body text-lg text-secondary-foreground/80 leading-relaxed max-w-xl mb-8">
                 Servicii notariale complete pe Calea Călărașilor 311, la 2
-                minute de Piața Muncii. Peste 14 ani de experiență, 136 de
+                minute de Piața Muncii. Peste 14 ani de experiență, 136+ de
                 recenzii pozitive.
               </p>
 
@@ -168,7 +168,7 @@ export default function Home() {
                 <p className="font-heading text-lg font-bold text-foreground leading-tight">
                   Miclescu Bogdan Constantin
                 </p>
-                <p className="font-body text-xs text-primary mt-1">
+                <p className="font-body text-xs text-gold-700 mt-1">
                   Notar Public
                 </p>
               </div>
