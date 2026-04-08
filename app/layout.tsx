@@ -25,7 +25,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const GTM_ID = "GTM-XXXXXXXX"; // TODO: Replace with real GTM container ID before go-live
+const GTM_ID = "GTM-M334HCP9";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.website),
