@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Column 1 — Contact */}
         <div>
-          <h3 className="font-heading text-lg font-semibold mb-4 text-primary">
+          <h3 className="font-heading text-lg font-semibold mb-4 text-gold-400">
             Contact
           </h3>
           <ul className="space-y-3">
@@ -84,7 +84,7 @@ export default function Footer() {
 
         {/* Column 2 — Servicii */}
         <div>
-          <h3 className="font-heading text-lg font-semibold mb-4 text-primary">
+          <h3 className="font-heading text-lg font-semibold mb-4 text-gold-400">
             Servicii
           </h3>
           <ul className="space-y-3">
@@ -103,7 +103,7 @@ export default function Footer() {
 
         {/* Column 3 — Informații */}
         <div>
-          <h3 className="font-heading text-lg font-semibold mb-4 text-primary">
+          <h3 className="font-heading text-lg font-semibold mb-4 text-gold-400">
             Informații
           </h3>
           <ul className="space-y-3">
@@ -131,7 +131,7 @@ export default function Footer() {
 
         {/* Column 4 — Program & Locație */}
         <div>
-          <h3 className="font-heading text-lg font-semibold mb-4 text-primary">
+          <h3 className="font-heading text-lg font-semibold mb-4 text-gold-400">
             Program & Locație
           </h3>
           <ul className="space-y-3">
