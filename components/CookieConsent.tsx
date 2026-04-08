@@ -7,7 +7,7 @@ const CONSENT_KEY = "spn_pusoiu_consent";
 
 declare global {
   interface Window {
-    dataLayer: Record<string, unknown>[];
+    dataLayer: (Record<string, unknown> | unknown[])[];
   }
 }
 
