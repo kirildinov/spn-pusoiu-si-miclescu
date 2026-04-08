@@ -5,8 +5,8 @@
   --foreground: 216 40% 15%;
   --card: 0 0% 100%;
   --card-foreground: 216 40% 15%;
-  --primary: 43 60% 45%;
-  --primary-hover: 43 66% 38%;
+  --primary: 43 60% 38%;
+  --primary-hover: 43 66% 30%;
   --primary-foreground: 0 0% 100%;
   --secondary: 216 54% 13%;
   --secondary-lighter: 216 40% 19%;
@@ -29,7 +29,7 @@
   --gold-300: 43 53% 68%;
   --gold-400: 43 54% 54%;
   --gold-500: 43 60% 45%;
-  --gold-600: 43 66% 35%;
+  --gold-600: 43 66% 30%;
   --gold-700: 43 73% 26%;
 
   /* Extended navy scale */
