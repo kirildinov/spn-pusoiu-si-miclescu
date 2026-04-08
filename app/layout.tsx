@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
 import CookieConsent from "@/components/CookieConsent";
+import TrackingProvider from "@/components/TrackingProvider";
 import { LocalBusinessSchema } from "@/components/StructuredData";
 import { BUSINESS } from "@/lib/business";
 import "./globals.css";
@@ -104,6 +105,7 @@ export default function RootLayout({
         <WhatsAppButton />
         <BackToTop />
         <CookieConsent />
+        <TrackingProvider />
         <LocalBusinessSchema />
 
         <Script id="google-tag-manager" strategy="afterInteractive">

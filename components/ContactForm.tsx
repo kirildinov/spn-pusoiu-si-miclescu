@@ -1,8 +1,9 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect, useRef } from "react";
 import { submitContact, type ContactFormState } from "@/app/contact/actions";
 import { services } from "@/lib/services";
+import { track } from "@/lib/tracking";
 import { Send } from "lucide-react";
 
 const initialState: ContactFormState = {
@@ -15,6 +16,18 @@ export default function ContactForm() {
     submitContact,
     initialState,
   );
+  const tracked = useRef(false);
+
+  useEffect(() => {
+    if (state.success && !tracked.current) {
+      tracked.current = true;
+      track({
+        event: "cta_click",
+        event_category: "form",
+        event_label: "contact_form_submit",
+      });
+    }
+  }, [state.success]);
 
   if (state.success) {
     return (
