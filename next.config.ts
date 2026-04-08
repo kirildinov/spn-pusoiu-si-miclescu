@@ -35,7 +35,7 @@ const config: NextConfig = {
       { source: "/index.php/contact", destination: "/contact", permanent: true },
       { source: "/index.php/component/k2/item/51-cras-tempus-vestibulum-lorem", destination: "/", permanent: true },
       // Legislation pages → official Romanian legislation portal
-      { source: "/index.php/legislatie/:path*", destination: "https://legislatie.just.ro/", permanent: true },
+      { source: "/index.php/legislatie/:path*", destination: "/", permanent: true },
       // Block old Joomla admin panel
       { source: "/administrator/:path*", destination: "/", permanent: true },
       // Catch-all for any remaining Joomla URLs — MUST be LAST
