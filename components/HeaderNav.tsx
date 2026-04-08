@@ -34,8 +34,8 @@ export default function HeaderNav({ navLinks }: HeaderNavProps) {
             href={link.href}
             className={`font-medium text-[0.9375rem] transition-colors ${
               isActive(link.href)
-                ? "text-primary"
-                : "text-secondary-foreground/80 hover:text-primary"
+                ? "text-gold-400"
+                : "text-secondary-foreground/80 hover:text-gold-400"
             }`}
           >
             {link.label}
@@ -53,7 +53,7 @@ export default function HeaderNav({ navLinks }: HeaderNavProps) {
         </a>
         <button
           type="button"
-          className="text-primary"
+          className="text-gold-400"
           onClick={() => setIsOpen(true)}
           aria-label="Deschide meniul"
         >
@@ -80,7 +80,7 @@ export default function HeaderNav({ navLinks }: HeaderNavProps) {
                 </span>
                 <button
                   type="button"
-                  className="text-primary"
+                  className="text-gold-400"
                   onClick={() => setIsOpen(false)}
                   aria-label="Închide meniul"
                 >
@@ -97,8 +97,8 @@ export default function HeaderNav({ navLinks }: HeaderNavProps) {
                     onClick={() => setIsOpen(false)}
                     className={`py-3 px-2 text-base font-medium transition-colors border-b border-secondary-foreground/10 ${
                       isActive(link.href)
-                        ? "text-primary"
-                        : "text-secondary-foreground/80 hover:text-primary"
+                        ? "text-gold-400"
+                        : "text-secondary-foreground/80 hover:text-gold-400"
                     }`}
                   >
                     {link.label}
