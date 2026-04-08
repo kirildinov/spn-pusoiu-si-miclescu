@@ -11,31 +11,24 @@ declare global {
   }
 }
 
-function gtag(...args: unknown[]) {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push(Object.fromEntries(args.map((a, i) => [i, a])));
-}
-
 function grantConsent() {
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    event: "consent_update",
+  window.dataLayer.push(["consent", "update", {
     analytics_storage: "granted",
     ad_storage: "granted",
     ad_user_data: "granted",
     ad_personalization: "granted",
-  });
+  }]);
 }
 
 function denyConsent() {
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    event: "consent_update",
+  window.dataLayer.push(["consent", "update", {
     analytics_storage: "denied",
     ad_storage: "denied",
     ad_user_data: "denied",
     ad_personalization: "denied",
-  });
+  }]);
 }
 
 export default function CookieConsent() {
