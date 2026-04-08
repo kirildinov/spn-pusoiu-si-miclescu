@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 interface Window {
-  dataLayer: (Record<string, unknown> | unknown[])[];
+  dataLayer: any[];
+  gtag: (...args: any[]) => void;
 }

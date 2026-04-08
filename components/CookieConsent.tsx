@@ -5,30 +5,34 @@ import Link from "next/link";
 
 const CONSENT_KEY = "spn_pusoiu_consent";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {
   interface Window {
-    dataLayer: (Record<string, unknown> | unknown[])[];
+    dataLayer: any[];
+    gtag: (...args: any[]) => void;
   }
 }
 
 function grantConsent() {
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push(["consent", "update", {
+  function gtag(..._args: any[]) { window.dataLayer.push(arguments); }
+  gtag("consent", "update", {
     analytics_storage: "granted",
     ad_storage: "granted",
     ad_user_data: "granted",
     ad_personalization: "granted",
-  }]);
+  });
 }
 
 function denyConsent() {
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push(["consent", "update", {
+  function gtag(..._args: any[]) { window.dataLayer.push(arguments); }
+  gtag("consent", "update", {
     analytics_storage: "denied",
     ad_storage: "denied",
     ad_user_data: "denied",
     ad_personalization: "denied",
-  }]);
+  });
 }
 
 export default function CookieConsent() {
