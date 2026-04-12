@@ -31,6 +31,41 @@ export async function submitContact(
   _prevState: ContactFormState,
   formData: FormData
 ): Promise<ContactFormState> {
+  // Honeypot check — silently succeed if filled
+  const honeypot = formData.get("website");
+  if (typeof honeypot === "string" && honeypot.length > 0) {
+    return { success: true, message: "Mesajul a fost trimis. Vă contactăm în cel mai scurt timp." };
+  }
+
+  // Cloudflare Turnstile verification
+  const turnstileToken = formData.get("cf-turnstile-response");
+  if (typeof turnstileToken !== "string" || turnstileToken.length === 0) {
+    return {
+      success: false,
+      message: "Verificarea de securitate a eșuat. Vă rugăm să reîncărcați pagina și să încercați din nou.",
+    };
+  }
+
+  const turnstileVerify = await fetch(
+    "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        secret: process.env.TURNSTILE_SECRET_KEY ?? "",
+        response: turnstileToken,
+      }),
+    }
+  );
+
+  const turnstileResult = (await turnstileVerify.json()) as { success: boolean };
+  if (!turnstileResult.success) {
+    return {
+      success: false,
+      message: "Verificarea de securitate a eșuat. Vă rugăm să încercați din nou.",
+    };
+  }
+
   const parsed = contactSchema.safeParse(Object.fromEntries(formData));
 
   if (!parsed.success) {

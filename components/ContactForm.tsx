@@ -1,6 +1,7 @@
 "use client";
 
-import { useActionState, useEffect, useRef } from "react";
+import { useState, useActionState, useEffect, useRef } from "react";
+import { Turnstile } from "@marsidev/react-turnstile";
 import { submitContact, type ContactFormState } from "@/app/contact/actions";
 import { services } from "@/lib/services";
 import { track } from "@/lib/tracking";
@@ -16,6 +17,7 @@ export default function ContactForm() {
     submitContact,
     initialState,
   );
+  const [turnstileToken, setTurnstileToken] = useState<string>("");
   const tracked = useRef(false);
 
   useEffect(() => {
@@ -45,6 +47,28 @@ export default function ContactForm() {
       action={formAction}
       className="bg-card rounded-2xl p-6 md:p-8 border border-border shadow-sm space-y-5"
     >
+      {/* Honeypot — must remain empty. Hidden from users, visible to bots. */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+        }}
+      >
+        <label htmlFor="website">Website (leave blank)</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          defaultValue=""
+        />
+      </div>
+
       {/* Name */}
       <div>
         <label
@@ -175,10 +199,26 @@ export default function ContactForm() {
         )}
       </div>
 
+      {/* Turnstile */}
+      <div className="my-4">
+        <Turnstile
+          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+          onSuccess={(token) => setTurnstileToken(token)}
+          onError={() => setTurnstileToken("")}
+          onExpire={() => setTurnstileToken("")}
+          options={{
+            theme: "light",
+            language: "ro",
+            size: "normal",
+          }}
+        />
+      </div>
+      <input type="hidden" name="cf-turnstile-response" value={turnstileToken} />
+
       {/* Submit */}
       <button
         type="submit"
-        disabled={isPending}
+        disabled={!turnstileToken || isPending}
         className="btn-primary w-full justify-center py-3"
       >
         <Send className="w-4 h-4" />

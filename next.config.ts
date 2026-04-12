@@ -13,7 +13,7 @@ const securityHeaders = [
   {
     key: "Content-Security-Policy",
     value:
-      "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://tagmanager.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://maps.googleapis.com https://maps.gstatic.com https://*.ggpht.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://region1.google-analytics.com; frame-src 'self' https://www.google.com https://maps.google.com https://www.googletagmanager.com; frame-ancestors 'self'",
+      "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://tagmanager.google.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://maps.googleapis.com https://maps.gstatic.com https://*.ggpht.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://region1.google-analytics.com; frame-src 'self' https://www.google.com https://maps.google.com https://www.googletagmanager.com https://challenges.cloudflare.com; frame-ancestors 'self'",
   },
 ];
 
@@ -21,15 +21,15 @@ const config: NextConfig = {
   async redirects() {
     return [
       // Old Joomla content pages → new routes
-      { source: "/index.php/acte-necesare/acte-vanzare", destination: "/servicii-notariale/contracte-vanzare", permanent: true },
+      { source: "/index.php/acte-necesare/acte-vanzare/:path*", destination: "/servicii-notariale/contracte-vanzare", permanent: true },
       { source: "/servicii-notariale/contracte-vanzare-cumparare", destination: "/servicii-notariale/contracte-vanzare", permanent: true },
-      { source: "/index.php/acte-necesare/acte-succesiune", destination: "/servicii-notariale/succesiuni", permanent: true },
-      { source: "/index.php/acte-necesare/procedura-divort", destination: "/servicii-notariale/divort-la-notar", permanent: true },
+      { source: "/index.php/acte-necesare/acte-succesiune/:path*", destination: "/servicii-notariale/succesiuni", permanent: true },
+      { source: "/index.php/acte-necesare/procedura-divort/:path*", destination: "/servicii-notariale/divort-la-notar", permanent: true },
       { source: "/index.php/acte-necesare/acte-deplasare", destination: "/contact", permanent: true },
-      { source: "/index.php/acte-necesare/declaratii", destination: "/servicii-notariale/declaratii-notariale", permanent: true },
-      { source: "/index.php/acte-necesare/procuri", destination: "/servicii-notariale/procuri-notariale", permanent: true },
-      { source: "/index.php/acte-necesare/donatia", destination: "/servicii-notariale/donatii", permanent: true },
-      { source: "/index.php/acte-necesare/schimb", destination: "/servicii-notariale/donatii", permanent: true },
+      { source: "/index.php/acte-necesare/declaratii/:path*", destination: "/servicii-notariale/declaratii-notariale", permanent: true },
+      { source: "/index.php/acte-necesare/procuri/:path*", destination: "/servicii-notariale/procuri-notariale", permanent: true },
+      { source: "/index.php/acte-necesare/donatia/:path*", destination: "/servicii-notariale/donatii", permanent: true },
+      { source: "/index.php/acte-necesare/schimb/:path*", destination: "/servicii-notariale/donatii", permanent: true },
       { source: "/index.php/tarife", destination: "/tarife", permanent: true },
       { source: "/index.php/traduceri", destination: "/traduceri", permanent: true },
       { source: "/index.php/contact", destination: "/contact", permanent: true },

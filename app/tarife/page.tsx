@@ -43,7 +43,7 @@ const tarifCategories = [
   {
     title: "Procuri și Declarații",
     items: [
-      "Procură generală",
+      "Procura de administrare",
       "Procură specială",
       "Declarație pe propria răspundere",
       "Declarație de notorietate",
